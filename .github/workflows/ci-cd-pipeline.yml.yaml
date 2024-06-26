@@ -20,6 +20,7 @@ jobs:
       env:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_IMAGE_NAME: ${{ secrets.DOCKER_IMAGE_NAME}}
       run: |
         echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
@@ -30,6 +31,6 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-         joaobatistalimajunior44/portifolio-jbl:v1
-         joaobatistalimajunior44/portifolio-jbl:latest
+         $DOCKER_IMAGE_NAME/portifolio-jbl:v1
+         $DOCKER_IMAGE_NAME/portifolio-jbl:latest
 
