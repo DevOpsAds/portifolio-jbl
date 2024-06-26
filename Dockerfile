@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copie os arquivos do aplicativo para a imagem
 COPY package.json .
-COPY package-lock.json .
+
 COPY . .
 
 # Instale as dependências do aplicativo
