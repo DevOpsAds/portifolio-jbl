@@ -46,7 +46,7 @@ jobs:
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
-          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          ssh-auth-sock: ${{ secrets.SSH_PASSPHRASE }}
 
       - name: Deploy Kubernetes manifests
         run: |
