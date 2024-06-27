@@ -42,22 +42,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       
-      - name: Install SSH key
+      - name: Configure SSH agent with passphrase
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
-          ssh-auth-sock: ${{ secrets.SSH_PASSPHRASE }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+
+      - name: Test SSH connection
+        run: ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.REMOTE_HOST }} "echo Connected to server successfully"
 
       - name: Deploy Kubernetes manifests
         run: |
-          ssh -o StrictHostKeyChecking=no ${{vars.SSH_USERNAME}}"kubectl apply -f ${{vars.REMOTER_DIR}}"
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.REMOTE_HOST }} "kubectl apply -f ${{ secrets.REMOTER_DIR }}"
 
       - name: Deploy to VPS
         uses: easingthemes/ssh-deploy@v2
         with:
           args: "-rlgoDzvc --delete"
           source: "deploy-local/deployments-ingress-controller/"
-          remote_host: ${{vars.REMOTE_HOST}}
-          remote_user: ${{vars.SSH_USERNAME}}
-          remote_port: ${{vars.REMOTE_PORT}}
-          target: ${{vars.REMOTER_DIR}}
+          remote_host: ${{ secrets.REMOTE_HOST }}
+          remote_user: ${{ secrets.SSH_USERNAME }}
+          remote_port: ${{ secrets.REMOTE_PORT }}
+          target: ${{ secrets.REMOTER_DIR }}
