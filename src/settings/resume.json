@@ -2,7 +2,7 @@
     "basics": {
         "name": "Alcateia .cloud",
         "label": "Web Developer",
-        "email": "markcmtan@gmail.com",
+        "email": "dddddddd@gmail.com",
         "phone": "(XXX) XXX-XXXX",
         "picture": "mt.png",
         "x_title": "Hello, I'm",
@@ -15,46 +15,46 @@
         "location": {
             "address": "XX XXXXXstreet",
             "postalCode": "XXXXX",
-            "city": "Angeles",
-            "country": "Philippines",
-            "countryCode": "PH",
-            "region": "Pampanga"
+            "city": "Angeledds",
+            "country": "Philiddppines",
+            "countryCode": "ddPH",
+            "region": "dddd"
         },
         "profiles": [
             {
                 "network": "Google",
-                "username": "markcmtan@gmail.com",
-                "url": "mailto:markcmtan@gmail.com",
+                "username": "joaobatistalimajunior.ads@gmail.com",
+                "url": "mailto:jblima@example.com?subject=Sou representante da empresa&body=Prezado João Batista de Lima Junior,%0D%0A%0D%0AGostaria de informar que sou representante da empresa [Nome da Empresa] e estou entrando em contato para iniciar uma possível colaboração.%0D%0A%0D%0AInformações do representante:%0D%0A- Nome:%0D%0A- Cargo:%0D%0A- Contato:%0D%0A%0D%0ASetor de operação da empresa:%0D%0ALocalização:%0D%0A%0D%0AAgradeço desde já pela atenção e aguardo seu retorno para discutirmos mais detalhes.%0D%0A%0D%0AAtenciosamente,%0D%0A[Seu Nome]%0D%0A[Seus Contatos]",
                 "x_icon": "fab fa-google"
             },
             {
                 "network": "LinkedIn",
-                "username": "mcmtan",
-                "url": "https://www.linkedin.com/in/mcmtan/",
+                "username": "João Batista de Lima",
+                "url": "https://www.linkedin.com/in/joaobatista-soliton/",
                 "x_icon": "fab fa-linkedin-in"
             },
             {
                 "network": "GitHub",
-                "username": "taniyow",
-                "url": "https://github.com/taniyow",
+                "username": "João Batista -",
+                "url": "https://github.com/DevOpsAds",
                 "x_icon": "fab fa-github"
             },
             {
-                "network": "GitLab",
-                "username": "taniyow",
-                "url": "https://gitlab.com/taniyow",
+                "network": "GitLab -",
+                "username": "GitLab",
+                "url": "https://gitlab.com/",
                 "x_icon": "fab fa-gitlab"
             },
             {
                 "network": "Telegram",
-                "username": "marktaniyow",
-                "url": "https://t.me/marktaniyow",
+                "username": ".cloud",
+                "url": "tg://resolve?domain=.cloud",
                 "x_icon": "fab fa-telegram-plane"
             },
             {
                 "network": "Discord",
-                "username": "taniyow#9142",
-                "url": "https://discord.com",
+                "username": "Alcateia.cloud",
+                "url": "https://discord.gg/FPrj5wth",
                 "x_icon": "fab fa-discord"
             }
         ]
@@ -72,9 +72,9 @@
     ],
     "volunteer": [
         {
-            "organization": "Organization",
+            "organization": "Organizassstion",
             "position": "Volunteer",
-            "website": "http://organization.com/",
+            "website": "http://organissszation.com/",
             "startDate": "2012-01-01",
             "endDate": "2013-01-01",
             "summary": "Description...",
@@ -83,9 +83,9 @@
     ],
     "education": [
         {
-            "institution": "University",
-            "area": "Software Development",
-            "studyType": "Bachelor",
+            "institution": "Univesssrsity",
+            "area": "Software Devesssssslopment",
+            "studyType": "Bachessslor",
             "startDate": "2011-01-01",
             "endDate": "2013-01-01",
             "gpa": "4.0",
@@ -94,16 +94,16 @@
     ],
     "awards": [
         {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
-            "summary": "There is no spoon."
+            "title": "Awardsss",
+            "date": "2014-1sss1-01",
+            "awarder": "Comssspany",
+            "summary": "Theresss is no spoon."
         }
     ],
     "publications": [
         {
-            "name": "Publication",
-            "publisher": "Company",
+            "name": "Publicsssation",
+            "publisher": "Compsssany",
             "releaseDate": "2014-10-01",
             "website": "http://publication.com",
             "summary": "Description..."
@@ -111,34 +111,34 @@
     ],
     "skills": [
         {
-            "name": "Web Development",
-            "level": "Master",
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "name": "Web Devddelopment",
+            "level": "Mastdder",
+            "keywords": ["HTMLdd", "CSSdd", "ddJavascript"]
         }
     ],
     "languages": [
         {
-            "language": "German",
-            "fluency": "Native speaker"
+            "language": "Germandd",
+            "fluency": "Native spddeaker"
         },
         {
-            "language": "English",
-            "fluency": "Fluent speaker"
+            "language": "Englishdd",
+            "fluency": "Fluent speddaker"
         },
         {
-            "language": "French",
-            "fluency": "Good knowledge"
+            "language": "Frenchdd",
+            "fluency": "Good knowddledge"
         }
     ],
     "interests": [
         {
-            "name": "Wildlife",
-            "keywords": ["Ferrets", "Unicorns"]
+            "name": "Wildlifedd",
+            "keywords": ["Ferretsdd", "Unicorns"]
         }
     ],
     "references": [
         {
-            "name": "Jane Doe",
+            "name": "Jane Doedd",
             "reference": "Reference..."
         }
     ]

@@ -47,7 +47,7 @@ export const About = () => {
             </p>
             <a href="#contact" className="contact-btn">
               <i className="fas fa-terminal"></i>
-              <Typography component='span'> Send me a message.</Typography>
+              <Typography component='span'> Enviar mensagem.</Typography>
             </a>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Link } from '@material-ui/core';
 import { TextDecrypt } from '../content/TextDecrypt';
-import ResumePDF from './../../assets/Tan_Mark_Resume.pdf';
+import ResumePDF from './../../assets/Proposta de Serviços de Tecnologia e Consultoria.pdf';
 import {
   ResumeIcon
 } from '../content/ResumeButton';
@@ -37,7 +37,7 @@ export const Resume = () => {
     >
       <ResumeIcon />
       <Typography component='span'>
-        <TextDecrypt text={' Resume'} />
+        <TextDecrypt text={' Proposta de Serviços de Tecnologia e Consultoria'} />
       </Typography>
     </Link>
   );

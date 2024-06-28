@@ -12,13 +12,13 @@ export const Today = () => {
       "night"
     }`;
     var days = [
-      "weekend",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "weekend",
+      "Fim de semana",
+      "Segunda-feira",
+      "Terça-feira",
+      "Quarta-feira",
+      "Quinta-feira",
+      "Sexta-feira",
+      "Fim de semana",
     ];
     var day = days[date.getDay()];
 

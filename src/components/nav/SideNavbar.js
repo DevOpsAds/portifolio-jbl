@@ -16,7 +16,7 @@ export const SideNavbar = () => {
         className={activeNav === '#' ? 'active' : ''}
       >
         <Typography>
-          Home
+          Início  
         </Typography>
       </a>
       <a href="#works"
@@ -24,7 +24,7 @@ export const SideNavbar = () => {
         className={activeNav === '#works' ? 'active' : ''}
       >
         <Typography>
-          Projects
+          Projetos
         </Typography>
       </a>
       <a href="#about" 
@@ -32,7 +32,7 @@ export const SideNavbar = () => {
         className={activeNav === '#about' ? 'active' : ''}
       >
         <Typography>
-          About
+          Sobre
         </Typography>
       </a>
       <a href="#contact"
@@ -40,7 +40,7 @@ export const SideNavbar = () => {
         className={activeNav === '#contact' ? 'active' : ''}
       >
         <Typography>
-          Contact
+          Contato
         </Typography>
       </a>
     </nav>

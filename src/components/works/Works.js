@@ -25,50 +25,44 @@ const useStyles = makeStyles((theme) => ({
 export const Works = () => {
   const classes = useStyles();
   const [projects, setProjects] = useState([
-    { 
-      id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
-      image: `${Portfolio}`,
-    },
-    { 
-      id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
-      alter: 'VeriTru Project',
-      image: `${Veritru}`,
-    },
-    { 
-      id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
-      image: `${Lofo}`,
-    },
-    { 
-      id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
-      image: `${Startup}`,
-    },
-    { 
-      id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
-      image: `${Lacalle}`,
-    },
+  
+      { 
+        id: 1,
+        title: 'Análise e Inteligência',
+        description: `Implementação de soluções avançadas de análise de dados e inteligência artificial para otimizar processos e decisões estratégicas.`,
+        alter: 'Análise e Inteligência',
+        image: `${Portfolio}`,
+      },
+      { 
+        id: 2,
+        title: 'Desenvolvimento de Software',
+        description: `Desenvolvimento de aplicações personalizadas utilizando tecnologias modernas para atender às necessidades específicas de negócio.`,
+        alter: 'Desenvolvimento de Software',
+        image: `${Veritru}`,
+      },
+      { 
+        id: 3,
+        title: 'Consultoria e Treinamentos',
+        description: `Consultoria especializada e treinamentos em tecnologia da informação para capacitar equipes e maximizar o potencial operacional.`,
+        alter: 'Consultoria e Treinamentos',
+        image: `${Lofo}`,
+      },
+      { 
+        id: 4,
+        title: 'Infraestrutura e Manutenção',
+        description: `Implementação e suporte contínuo de infraestrutura tecnológica para garantir operações eficientes e seguras.`,
+        alter: 'Infraestrutura e Manutenção',
+        image: `${Startup}`,
+      },
+      { 
+        id: 5,
+        title: 'Projetos Especiais e Inovação',
+        description: `Desenvolvimento de projetos inovadores e personalizados que impulsionam a diferenciação competitiva e o crescimento estratégico.`,
+        alter: 'Projetos Especiais e Inovação',
+        image: `${Lacalle}`,
+      },
   ]);
+  
 
   return (
     <section id="works">
