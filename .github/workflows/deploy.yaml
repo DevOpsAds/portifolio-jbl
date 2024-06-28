@@ -1,4 +1,4 @@
-name: deploy-bio-page
+name: bio portifolio page
 
 on:
   push:
