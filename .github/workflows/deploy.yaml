@@ -51,10 +51,3 @@ jobs:
           kubectl apply -f deploy-local/deployments-ingress-controller/
 
 
-      - name: Clear Nginx Cache
-        run: |
-          kubectl exec svc/nginx-service -- rm -rf /var/cache/nginx/*
-
-      - name: Reload Nginx
-        run: |
-          kubectl exec svc/nginx-service -- nginx -s reload
