@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: test-container
-        image: joaobatistalimajunior44/portifolio-jbl:v1
+        image: joaobatistalimajunior44/portifolio-jbl:v1.0
         ports:
         - containerPort: 3000
 ---
