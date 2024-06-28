@@ -46,11 +46,6 @@ jobs:
           method: kubeconfig
           kubeconfig: ${{ secrets.K8S_CONFIG }}
 
-      - name: Deploy Kubernetes manifests
-        run: |
-          kubectl apply -f deploy-local/deployments-ingress-controller/
-
-
       - name: Clear Nginx Cache
         run: |
           kubectl exec svc/nginx-service -- rm -rf /var/cache/nginx/*
@@ -58,3 +53,7 @@ jobs:
       - name: Reload Nginx
         run: |
           kubectl exec svc/nginx-service -- nginx -s reload
+      
+      - name: Deploy Kubernetes manifests
+        run: |
+          kubectl apply -f deploy-local/deployments-ingress-controller/
