@@ -31,11 +31,11 @@ jobs:
           ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
 
       - name: Test SSH connection
-        run: ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.REMOTE_HOST }} "echo Connected to server successfully"
+        run: ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }} "echo Connected to server successfully"
 
       - name: Deploy Kubernetes manifests
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.REMOTE_HOST }} "kubectl apply -f ${{ secrets.REMOTE_DIR }}"
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }} "kubectl apply -f ${{ secrets.REMOTE_DIR }}"
 
       - name: Deploy to VPS
         uses: easingthemes/ssh-deploy@v2
