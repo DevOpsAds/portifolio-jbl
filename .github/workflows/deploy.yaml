@@ -32,5 +32,5 @@ jobs:
           kubeconfig: ${{ secrets.K8S_CONFIG }}
 
       - name: Deploy Kubernetes manifests
-        run: kubectl apply -f deploy-local/deployments-ingress-controller/
+        run: kubectl apply -f deploy-local/deployments-ingress-controller .
 
