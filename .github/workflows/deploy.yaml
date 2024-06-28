@@ -31,18 +31,18 @@ jobs:
           ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
 
       - name: Test SSH connection
-        run: ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.REMOTE_HOST }} "echo Connected to server successfully"
+        run: ssh -o StrictHostKeyChecking=no ${{ vars.SSH_USERNAME }}@${{ vars.REMOTE_HOST }} "echo Connected to server successfully"
 
       - name: Deploy Kubernetes manifests
         run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.REMOTE_HOST }} "kubectl apply -f ${{ secrets.REMOTE_DIR }}"
+          ssh -o StrictHostKeyChecking=no ${{ vars.SSH_USERNAME }}@${{ vars.REMOTE_HOST }} "kubectl apply -f ${{ secrets.REMOTE_DIR }}"
 
       - name: Deploy to VPS
         uses: easingthemes/ssh-deploy@v2
         with:
           args: "-rlgoDzvc --delete"
           source: "deploy-local/deployments-ingress-controller/"
-          remote_host: ${{ secrets.REMOTE_HOST }}
-          remote_user: ${{ secrets.SSH_USERNAME }}
-          remote_port: ${{ secrets.REMOTE_PORT }}
-          target: ${{ secrets.REMOTE_DIR }}
+          remote_host: ${{ vars.REMOTE_HOST }}
+          remote_user: ${{ vars.SSH_USERNAME }}
+          remote_port: ${{ vars.REMOTE_PORT }}
+          target: ${{ vars.REMOTE_DIR }}
