@@ -50,14 +50,11 @@ jobs:
         run: |
           kubectl apply -f deploy-local/deployments-ingress-controller/
 
-      - name: Find Nginx Pod
-        run: |
-          nginx_pod_name=$(kubectl get pods -l app=nginx -n <seu-namespace> -o jsonpath='{.items[0].metadata.name}')
 
       - name: Clear Nginx Cache
         run: |
-          kubectl exec -n <seu-namespace> $nginx_pod_name -- rm -rf /var/cache/nginx/*
+          kubectl exec svc/nginx-service -- rm -rf /var/cache/nginx/*
 
       - name: Reload Nginx
         run: |
-          kubectl exec -n <seu-namespace> $nginx_pod_name -- nginx -s reload
+          kubectl exec svc/nginx-service -- nginx -s reload
