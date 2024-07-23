@@ -28,9 +28,9 @@ export const Works = () => {
   const [projects, setProjects] = useState([
     {
       id: 1,
-      title: ' Como está a saúde da sua TI? ',
-      description: 'Se a TI é essencial para o sucesso do seu negócio, clique aqui para descobrir como nossos serviços de manutenção preventiva e corretiva por contrato podem beneficiar sua empresa."',
-      alter: ' Como está a saúde da sua TI? ',
+      title: 'Análise e Inteligência',
+      description: `Implementação de soluções avançadas de análise de dados e inteligência artificial para otimizar processos e decisões estratégicas.`,
+      alter: 'Análise e Inteligência',
       image: `${Portfolio}`,
     },
     {
@@ -71,17 +71,17 @@ export const Works = () => {
             <div className="__img_wrapper">
               <img src={project.image} alt={project.alter} />
             </div>
-            <Link to={`/details/${project.id}`} className="__content_wrapper">
+            <div key={project.id} className="__content_wrapper">
               <h3 className="title">
                 <TextDecrypt text={project.id + '. ' + project.title} />
               </h3>
               <p className="description">
                 {project.description}
               </p>
-              <div className="details-link">
-                Saiba Mais
-              </div>
-            </Link>
+              <Link to={`/details/${project.id}`} className="details-link">
+                Saiba Mais Detalhes
+              </Link>
+            </div>
           </div>
         ))}
       </Container>

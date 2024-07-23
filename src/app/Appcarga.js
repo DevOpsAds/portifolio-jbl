@@ -1,14 +1,12 @@
-import React, { Suspense, lazy } from "react";
+import React, { lazy, Suspense } from "react";
 import { CssBaseline } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ThemeProvider } from "../components/theme/ThemeProvider";
 import { logCredits } from "../utils/logCredits";
 import { Home } from "../pages/Home";
-import { Resume } from "../pages/Resume";
+import { Detailsto } from "../components/details/Detailsto";
 
-import { Details } from "../pages/Details";
-
-// Carregamento assíncrono do componente PageNotFound
+// Lazy loading for the PageNotFound component
 const PageNotFound = lazy(() => import("../pages/PageNotFound"));
 
 export const App = () => {
@@ -21,7 +19,7 @@ export const App = () => {
                 <Suspense fallback={<div>Loading...</div>}>
                     <Switch>
                         <Route path="/" exact component={Home} />
-                        <Route path="/details/:id" component={Details} /> {/* Corrigido o caminho */}
+                        <Route path="/details/:id" component={Detailsto} />
                         <Route path="/resume" component={Resume} />
                         <Route path="*" component={PageNotFound} />
                     </Switch>

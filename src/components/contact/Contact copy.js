@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-
-import React, { useRef, useState } from "react";
+import React from "react";
+import { useRef } from "react";
 import { Container, Typography, TextField, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
@@ -33,30 +33,9 @@ export const Contact = () => {
   const greetings = "Deixe uma mensagem e eu entrarei em contato.";
 
   const form = useRef();
-  const [recaptchaValue, setRecaptchaValue] = useState(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    if (!form.current.name.value || !form.current.email.value || !form.current.message.value) {
-      Swal.fire({
-        position: 'center',
-        icon: 'error',
-        title: 'Todos os campos são obrigatórios!',
-        showConfirmButton: true,
-      });
-      return;
-    }
-
-    if (!recaptchaValue) {
-      Swal.fire({
-        position: 'center',
-        icon: 'error',
-        title: 'Por favor, complete o reCAPTCHA!',
-        showConfirmButton: true,
-      });
-      return;
-    }
 
     emailjs.sendForm('service_2ddtlxj', 'template_phbzcwu', form.current, 'ge62uBJpYsvV0npPp')
       .then((result) => {
@@ -74,9 +53,6 @@ export const Contact = () => {
     e.target.reset()
   };
 
-  const handleRecaptchaChange = (value) => {
-    setRecaptchaValue(value);
-  };
 
 
     return (
@@ -112,11 +88,6 @@ export const Contact = () => {
                   minRows={5}
                   variant="filled"
                   name="message"
-                  className={classes.formfield}
-                />
-                <ReCAPTCHA
-                  sitekey="6Ld-TgQqAAAAAOMMLZA-_-x_kV_JQ8mIJzCb9G_1"
-                  onChange={handleRecaptchaChange}
                   className={classes.formfield}
                 />
                 <button type="submit" value="Send" className="submit-btn">
