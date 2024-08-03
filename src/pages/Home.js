@@ -4,6 +4,8 @@ import { Content } from '../components/content/Content';
 import { Hidden } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
+
+
 import { ThemeToggle } from '../components/theme/ThemeToggle';
 import { Resume } from '../components/resume/Resume';
 import { SocialIcons } from '../components/content/SocialIcons';
