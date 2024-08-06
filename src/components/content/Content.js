@@ -2,7 +2,6 @@ import React from "react";
 import { Typography, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "./TextDecrypt";
-import Resume from "../../settings/resume.json";
 import { FirstName, LastName } from "../../utils/getName";
 
 const useStyles = makeStyles((theme) => ({
@@ -34,8 +33,8 @@ export const Content = () => {
             <TextDecrypt text={`${FirstName} ${LastName}`} />
         </Typography>
         <Typography variant="h1" component="h1" className={classes.jobs}>
-            <TextDecrypt text={`${Resume.basics.job1} + `} />
-            <TextDecrypt text={`${Resume.basics.job2}`} />
+            <TextDecrypt text={"Soluções + "} />
+            <TextDecrypt text={"Completas"} />
         </Typography>
       </div>
     </Container>

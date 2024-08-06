@@ -9,7 +9,6 @@ import { Resume } from '../components/resume/Resume';
 import { SocialIcons } from '../components/content/SocialIcons';
 import { SpeedDials } from '../components/speedDial/SpeedDial';
 import { SideNavbar } from '../components/nav/SideNavbar';
-import { Contact } from '../components/contact/Contactclients';
 import { Detailsto } from '../components/details/Detailsto'; // Importar o componente
 
 const useStyles = makeStyles(() => ({
@@ -20,7 +19,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const Details = () => {
+export const Xpz = () => {
   const classes = useStyles();
 
   return (
@@ -43,7 +42,7 @@ export const Details = () => {
       <Suspense fallback={<div>Carregando...</div>}>
         <Detailsto />
       </Suspense>
-      <Contact />
+     
     </>
   );
 };

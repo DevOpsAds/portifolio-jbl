@@ -1,0 +1,13 @@
+
+{
+    "options": [
+      { "value": "backup", "label": "Backup de Dados" },
+      { "value": "log_cleanup", "label": "Limpeza de Logs" },
+      { "value": "security_scan", "label": "Verificação de Segurança" },
+      { "value": "disk_usage", "label": "Monitoramento de Uso de Disco" },
+      { "value": "service_restart", "label": "Reinício de Serviços" },
+      { "value": "network_health", "label": "Verificação de Saúde da Rede" },
+      { "value": "custom_script", "label": "Script Personalizado" }
+    ]
+  }
+  

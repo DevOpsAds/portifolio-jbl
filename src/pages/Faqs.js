@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { LogoLink } from '../components/logo/LogoLink';
-import { Content } from '../components/content/Content';
+import { Content } from '../components/content/ContentFaq/Content';
 import { Hidden } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import DisplacementSphere from '../components/background/DisplacementSphere';
@@ -9,8 +9,7 @@ import { Resume } from '../components/resume/Resume';
 import { SocialIcons } from '../components/content/SocialIcons';
 import { SpeedDials } from '../components/speedDial/SpeedDial';
 import { SideNavbar } from '../components/nav/SideNavbar';
-import { Contact } from '../components/contact/Contactclients';
-import { Detailsto } from '../components/details/Detailsto'; // Importar o componente
+
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -20,10 +19,11 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const Details = () => {
+export const Faqs = () => {
   const classes = useStyles();
 
   return (
+    
     <>
       <div className={classes.root} id="home">
         <DisplacementSphere />
@@ -37,13 +37,16 @@ export const Details = () => {
           <SpeedDials />
         </Hidden>
         <Resume />
+        
       </div>
       <SideNavbar />
       {/* Envolver Detailsto com Suspense e fornecer um fallback */}
       <Suspense fallback={<div>Carregando...</div>}>
-        <Detailsto />
+       
+        
       </Suspense>
-      <Contact />
-    </>
+      
+      </>
+ 
   );
 };
