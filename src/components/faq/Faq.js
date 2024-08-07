@@ -1,5 +1,5 @@
 import React, { useState,useContext } from 'react';
-import './FAQ.css';
+import './Faq.css';
 import { ThemeContext } from '../theme/ThemeProvider';  // Ajuste o caminho conforme necessário
 
 

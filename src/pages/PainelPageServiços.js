@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
+
 import { LogoLink } from '../components/logo/LogoLink';
-import { Content } from '../components/content/ContentFaq/Content';
+import { ContentScripts } from '../components/content/ContentServicos/Content';
 import { Hidden } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import DisplacementSphere from '../components/background/DisplacementSphere';
@@ -19,7 +20,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export const Faqs = () => {
+export const PainelPageServiços = () => {
   const classes = useStyles();
 
   return (
@@ -28,7 +29,7 @@ export const Faqs = () => {
       <div className={classes.root} id="home">
         <DisplacementSphere />
         <LogoLink />
-        <Content />
+        
         <ThemeToggle />
         <Hidden smDown>
           <SocialIcons />
@@ -50,3 +51,39 @@ export const Faqs = () => {
  
   );
 };
+
+export const PainelPageServiçosScript = () => {
+  
+
+  const classes = useStyles();
+ 
+
+  return (
+    
+    <>
+      <div className={classes.root} id="home">
+        <DisplacementSphere />
+        <LogoLink />
+        <ContentScripts />;
+        <ThemeToggle />
+        <Hidden smDown>
+          <SocialIcons />
+        </Hidden>
+        <Hidden mdUp>
+          <SpeedDials />
+        </Hidden>
+        <Resume />
+        
+      </div>
+      <SideNavbar />
+      {/* Envolver Detailsto com Suspense e fornecer um fallback */}
+      <Suspense fallback={<div>Carregando...</div>}>
+       
+        
+      </Suspense>
+      
+      </>
+ 
+  );
+};
+
