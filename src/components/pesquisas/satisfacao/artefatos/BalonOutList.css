@@ -1,0 +1,49 @@
+.balon-out-list {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 8px; /* Ajuste do padding conforme necessário */
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    margin-bottom: 8px;
+    position: relative;
+    height: 80%; /* Ajuste a altura para 80% do pai */
+    width: 80%; /* Ajuste a largura para 80% do pai */
+  }
+  
+  /* Garantir que o avatar e o conteúdo interno se ajustem corretamente */
+  .avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 12px; /* Ajuste do margin conforme necessário */
+  }
+  
+  .avatar {
+    width: 40px; /* Ajuste conforme necessário */
+    height: 40px; /* Ajuste conforme necessário */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .username {
+    margin-top: 4px; /* Ajuste conforme necessário */
+    font-size: 12px; /* Ajuste conforme necessário */
+    color: #333;
+    text-align: center;
+  }
+  
+  .message-container {
+    flex: 1;
+  }
+  
+  .message {
+    font-size: 14px; /* Ajuste conforme necessário */
+    color: #333;
+    margin-bottom: 8px; /* Ajuste conforme necessário */
+  }
+  
+  .opinion-icon {
+    font-size: 16px; /* Ajuste conforme necessário */
+  }
+  

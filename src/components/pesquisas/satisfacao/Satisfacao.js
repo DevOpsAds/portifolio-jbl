@@ -3,8 +3,9 @@ import React, { useContext } from 'react';
 import './Satisfacao.css'; // Importe o arquivo CSS
 
 import Header from './artefatos/Header'; // Importe o componente Header
-import  Metrica from './artefatos/Metrica';
-import ContentionsChat from './ContentionsChat';
+
+
+import AppPercetColor from './artefatos/PercentColor'
 // Simulação do contexto de tema
 import { ThemeContext } from '../../theme/ThemeProvider';  // Ajuste o caminho conforme necessário
 
@@ -23,14 +24,9 @@ export const Satisfacao = () => {
   return (
     <div className={`__faq_form_wrapper ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
       <Header title={data.title} subtitle={data.subtitle} />
-      <Metrica 
-        satisfaction={70} 
-        dissatisfaction={0} 
-        excellent={50} 
-        good={89} 
-        fair={98} 
-      />
-      <ContentionsChat />
+
+      
+      <AppPercetColor />
 
     </div>
   

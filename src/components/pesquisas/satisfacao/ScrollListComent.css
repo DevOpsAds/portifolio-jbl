@@ -1,0 +1,7 @@
+.scroll-list-comment {
+    max-height: 400px; /* Altura máxima antes de habilitar a rolagem */
+    overflow-y: auto;  /* Habilita a rolagem vertical */
+    padding: 10px;
+    background: #87d607;
+  }
+  

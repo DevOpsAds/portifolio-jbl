@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Metrica.css';
 
+
 // Função para calcular a cor média de uma lista de cores
 const averageColor = (colors) => {
   const colorValues = colors.map(color => {
@@ -105,6 +106,8 @@ const Metrica = ({ satisfaction, dissatisfaction, excellent, good, fair }) => {
               }}
             >
               {label}: {value}%
+            {/* Passa a cor da régua para o ScrollListComent */}
+           
             </div>
           );
         })}

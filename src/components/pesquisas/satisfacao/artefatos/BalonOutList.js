@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './BalonOutList.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGrinStars, faFrown, faCheckCircle, faTachometerAlt, faUserNinja } from '@fortawesome/free-solid-svg-icons';
-import './OutBalon.css';
 
 // Mapeamento de ícones para opiniões
 const opinionIcons = {
@@ -13,7 +13,7 @@ const opinionIcons = {
   fair: faUserNinja,                 // User Ninja
 };
 
-const OutBalon2 = ({ username, message, opinion, style }) => {
+const BalonoutList = ({ avatar, message, opinion, username,style }) => {
   // Define a cor do ícone com base na opinião
   const iconColor = {
     satisfaction: 'green',
@@ -24,8 +24,12 @@ const OutBalon2 = ({ username, message, opinion, style }) => {
   }[opinion] || 'black';
 
   return (
-    <div className="out-balon">
-      <div className="message-container" style={style}>
+    <div className="balon-out-list" style={style}>
+      <div className="avatar-container">
+        <img src={avatar} alt="Avatar" className="avatar" />
+        <div className="username">{username}</div>
+      </div>
+      <div className="message-container">
         <div className="message">
           {message}
         </div>
@@ -36,20 +40,16 @@ const OutBalon2 = ({ username, message, opinion, style }) => {
           />
         </div>
       </div>
-      <div className="username-container">
-        <div className="username">
-          {username}
-        </div>
-      </div>
     </div>
   );
 };
 
-OutBalon2.propTypes = {
-  username: PropTypes.string.isRequired,
+BalonoutList.propTypes = {
+  avatar: PropTypes.string.isRequired,
   message: PropTypes.string.isRequired,
   opinion: PropTypes.oneOf(['satisfaction', 'dissatisfaction', 'excellent', 'good', 'fair']).isRequired,
+  username: PropTypes.string.isRequired,
   style: PropTypes.object,
 };
 
-export default OutBalon2;
+export default BalonoutList;

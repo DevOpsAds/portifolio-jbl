@@ -1,0 +1,29 @@
+.no-reviews-message {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5), /* Cor do degradê */
+      rgba(0, 0, 0, 0.5) /* Cor do degradê */
+    ),
+    url('https://img1.gratispng.com/20180214/yfw/kisspng-gray-wolf-drawing-art-watercolor-painting-forest-the-size-of-two-wolves-5a84667887e040.5774420315186264245566.jpg'); /* Substitua pelo URL da imagem desejada */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Ajuste a cor do texto para se destacar sobre o fundo */
+    margin: 20px;
+  }
+  
+  .no-reviews-message h2 {
+    color: #fff;
+  }
+  
+  .no-reviews-message p {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .no-reviews-message strong {
+    color: #00bfff; /* Cor destacada para o texto em negrito */
+  }
+  
