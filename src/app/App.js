@@ -6,7 +6,7 @@ import { logCredits } from "../utils/logCredits";
 import { Home } from "../pages/Home";
 import { Resume } from "../pages/Resume";
 import { Details } from "../pages/Details";
-import { PainelPageServiços,PainelPageServiçosScript } from "../pages/PainelPageServiços";
+import { PainelPageServiçosScript } from "../pages/PainelPageServiços";
 
 
 // Carregamento assíncrono do componente PageNotFound
@@ -24,7 +24,7 @@ export const App = () => {
                         <Route path="/" exact component={Home} />
                         <Route path="/details/:id" component={Details} />
                         <Route path="/resume" component={Resume} />
-                        <Route path="/servicos" exact component={PainelPageServiços} />
+                        <Route path="/servicos" exact component={PainelPageServiçosScript} />
                         <Route path="/servicos/scripts/faq" component={PainelPageServiçosScript} />
                         <Route path="/servicos/scripts/inovacao" component={PainelPageServiçosScript} />
                         <Route path="/servicos/scripts/download/exemplo1" component={PainelPageServiçosScript} />

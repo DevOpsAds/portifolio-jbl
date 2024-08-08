@@ -1,0 +1,54 @@
+.balon-final-out-coment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: normal;
+  align-items: normal;
+  align-items: center;
+  border: 1px solid #3c7451;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+
+
+.message-container {
+  flex: 1;
+}
+
+.message {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.opinion-icon {
+  font-size: 20px;
+}

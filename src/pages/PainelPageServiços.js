@@ -29,7 +29,7 @@ export const PainelPageServiços = () => {
       <div className={classes.root} id="home">
         <DisplacementSphere />
         <LogoLink />
-        
+               
         <ThemeToggle />
         <Hidden smDown>
           <SocialIcons />

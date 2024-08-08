@@ -1,0 +1,32 @@
+.header {
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+
+  .dark-theme {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .dark-theme .line {
+    width: 100%;
+    border-top: 1px solid currentColor; /* Usa a cor atual do texto */
+    margin: 10px 0; /* Espaçamento antes e depois da linha */
+  }
+
+  h1 {
+    margin: 0 0 10px 0;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: smaller;
+  }
+
+  .line {
+    width: 100%;
+    border-top: 1px solid currentColor; /* Usa a cor atual do texto */
+    margin: 10px 0; /* Espaçamento antes e depois da linha */
+  }
