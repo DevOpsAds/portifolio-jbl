@@ -7,8 +7,8 @@ import { FirstName, LastName } from "../../../utils/getName";
 import { Inovation } from '../../inovation/Inovation'; // Importar o componente
 import { DownloadComponent } from '../../download/DownloadComponent'; // Importar o componente
 import { Faq } from '../../faq/Faq';
-import  { Satisfacao } from'../../pesquisas/satisfacao/Satisfacao';
 
+import ProductList from '../../ecommerce/ProductList'
 import { useLocation } from 'react-router-dom';
 
 
@@ -23,7 +23,7 @@ export const ContentScripts= () => {
   const renderComponent = () => {
     switch (pathname) {
       case '/servicos':
-        return <Satisfacao />;
+        return <ProductList />;
 
       case '/servicos/scripts/faq':
         return <Faq />;

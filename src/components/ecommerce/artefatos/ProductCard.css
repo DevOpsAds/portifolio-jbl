@@ -1,0 +1,36 @@
+/* ProductCard.css */
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    max-width: 250px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-details {
+    padding: 16px;
+  }
+  
+  .product-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .product-price {
+    color: #e15d44;
+    font-size: 1.1rem;
+    margin: 8px 0;
+  }
+  
+  .product-condition {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  

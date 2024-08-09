@@ -1,0 +1,45 @@
+import React, { useContext } from 'react';
+
+import './Orca.css'; // Importe o arquivo CSS
+
+import DiscountCalculator   from'../../negociation/DiscountCalculator'
+import WorkHoursCalculator   from'../../negociation/WorkHoursCalculator'
+
+import Header from './artefatos/Header'; // Importe o componente Header
+
+
+
+// Simulação do contexto de tema
+import { ThemeContext } from '../../theme/ThemeProvider';  // Ajuste o caminho conforme necessário
+
+export const Orca = () => {
+  const { theme } = useContext(ThemeContext);
+ 
+
+
+
+
+  const data = {
+    title: "Resultados da pesquisa de satisfação do cliente, incluindo depoimentos",
+    subtitle: "Nossa política é que todos estejam realmente  satisfeitos com nossos serviços. Embora saibamos que pode ser impossível 100% que isso aconteça, continuaremos tentando sempre melhorar nossos serviços para que isso seja nossa realidade."
+  };
+
+  return (
+    <div className={`__faq_form_wrapper ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+      <Header title={data.title} subtitle={data.subtitle} />
+      <DiscountCalculator basePrice={100} minDays={3} maxDays={30} />
+      <WorkHoursCalculator 
+      basePrice={100} 
+      minDays={1} 
+      maxDays={30} 
+      totalWorkHours={8} // Adicione a prop obrigatória
+    />
+     
+      
+      
+
+    </div>
+  
+
+  );
+};
